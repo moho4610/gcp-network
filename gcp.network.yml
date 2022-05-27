@@ -1,0 +1,33 @@
+name: 'gcp - Network'
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - 'gcp.network.yml'
+      - 'environments/*'
+    exclude:
+      - '/**/*.md'
+
+resources:
+  repositories:
+    - repository: modules
+      name: terraform-modules
+      type: git
+      ref: main
+    - repository: pipelines
+      name: devops-pipelines
+      type: git
+      ref: main
+
+variables:
+- template: .azuredevops/pipelineVariables/global.variables.yaml
+- group: terraform-encryption
+
+
+stages: 
+- template: templates/terraform/pipeline.yaml@pipelines
+#- template: templates/terraform/deploy.yaml@pipelines

@@ -1,0 +1,11 @@
+variables: 
+  folder_context: $(Build.SourcesDirectory)
+  deployment_name: gcp-network
+  vmImage: "ubuntu-latest"
+  backendType: "tfCloud"
+  cloudType: "gcp"
+  devEnvEnabled: True
+  sharedEnvEnabled: False
+  testEnvEnabled: False
+  prodEnvEnabled: False
+  pocEnvEnabled: False

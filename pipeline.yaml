@@ -1,0 +1,41 @@
+trigger:
+  batch: true
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - 'environments/*'
+    exclude:
+      - '/**/*.md'
+
+pr:
+  branches:
+    include:
+      - main
+  
+
+
+      
+
+resources:
+  repositories:
+    - repository: modules
+      name: terraform-modules
+      type: git
+      ref: main
+    - repository: pipelines
+      name: devops-pipelines
+      type: git
+      ref: main
+
+variables:
+- template: .azuredevops/pipelineVariables/global.variables.yaml
+- group: terraform-encryption
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages: 
+- template: templates/terraform/build.yaml@pipelines
+- template: templates/terraform/deploy.yaml@pipelines

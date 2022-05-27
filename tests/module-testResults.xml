@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Global Module Tests" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2022-03-24" time="07:41:02">
+  <environment nunit-version="2.5.8.0" user="michelle.munro" os-version="10.0.19043" machine-name="NTT-FR2DFB3" user-domain="AU" clr-version="Unknown" cwd="C:\Users\michelle.munro\source\repos\AustralianRetirementTrust\gcp-network" platform="Microsoft Windows 10 Pro|C:\Windows|\Device\Harddisk0\Partition3" />
+  <culture-info current-culture="en-AU" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Global Module Tests" executed="True" result="Success" success="True" time="0.0794" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Users\michelle.munro\source\repos\AustralianRetirementTrust\devops-pipelines\tests\module.tests.ps1" executed="True" result="Success" success="True" time="0.0794" asserts="0" description="C:\Users\michelle.munro\source\repos\AustralianRetirementTrust\devops-pipelines\tests\module.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="File/folder tests" executed="True" result="Success" success="True" time="0.0251" asserts="0" description="File/folder tests">
+            <results>
+              <test-suite type="TestFixture" name="File/folder tests.General module folder tests" executed="True" result="Success" success="True" time="0.0207" asserts="0" description="File/folder tests.General module folder tests">
+                <results>
+                  <test-suite type="ParameterizedTest" name="File/folder tests.General module folder tests.[&lt;moduleFolderName&gt;] Module should contain a [main.tf] file" executed="True" result="Success" success="True" time="0.0085" asserts="0" description="[&lt;moduleFolderName&gt;] Module should contain a [main.tf] file">
+                    <results>
+                      <test-case description="[C:/Users/michelle.munro/source/repos/AustralianRetirementTrust/gcp-network/environments/dev] Module should contain a [main.tf] file" name="File/folder tests.General module folder tests.[C:/Users/michelle.munro/source/repos/AustralianRetirementTrust/gcp-network/environments/dev] Module should contain a [main.tf] file" time="0.0085" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="File/folder tests.General module folder tests.[&lt;moduleFolderName&gt;] Module should contain a [variables.tf] file" executed="True" result="Success" success="True" time="0.0085" asserts="0" description="[&lt;moduleFolderName&gt;] Module should contain a [variables.tf] file">
+                    <results>
+                      <test-case description="[C:/Users/michelle.munro/source/repos/AustralianRetirementTrust/gcp-network/environments/dev] Module should contain a [variables.tf] file" name="File/folder tests.General module folder tests.[C:/Users/michelle.munro/source/repos/AustralianRetirementTrust/gcp-network/environments/dev] Module should contain a [variables.tf] file" time="0.0085" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
